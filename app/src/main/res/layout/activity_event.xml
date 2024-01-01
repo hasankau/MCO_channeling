@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mco2.EventActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <TextView
+                android:text=" Add New Event"
+                android:layout_width="match_parent"
+                android:id="@+id/textView2"
+                android:textSize="22sp"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/title"
+                android:hint="Event Title"
+                android:background="@android:drawable/editbox_background_normal"
+                android:height="50dp"
+                android:layout_height="60dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/sub"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Subject" />
+
+            <Switch
+                android:text="Open EVent"
+                android:layout_width="match_parent"
+                android:id="@+id/oc"
+                android:textOn="Open"
+                android:textOff="Closed"
+                android:layout_height="60dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/date"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Date" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/stime"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Start Time" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/etime"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="End Time" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/loc"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Location" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textCapWords|textPersonName"
+                android:ems="10"
+                android:id="@+id/map"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Map Location" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:text="Cancel"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b1"
+                    android:background="@color/colorAccent"
+                    android:textColor="#fff"
+                    android:layout_width="0dip"
+                    android:layout_weight=".5"
+                    android:layout_margin="2dp"
+                    android:textAllCaps="false"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b2"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:layout_weight=".5"
+                    android:layout_margin="2dp"
+                    android:onClick="save"
+                    android:textAllCaps="false"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

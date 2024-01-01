@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/hbutton"
+    android:layout_height="320dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text=" Current Loan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="left"
+            android:id="@+id/lno"
+            android:textSize="24sp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:text=" 0-0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dates"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp">
+
+            <TextView
+                android:text=" Amount"
+                android:layout_width="100dp"
+                android:id="@+id/h"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/am"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp">
+
+            <TextView
+                android:text=" Paid"
+                android:layout_width="100dp"
+                android:id="@+id/j"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/paid"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp">
+
+            <TextView
+                android:text=" Interest"
+                android:layout_width="100dp"
+                android:id="@+id/f"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/in"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text=" Arias Days"
+                android:layout_width="100dp"
+                android:id="@+id/d"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/ard"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text=" Arias"
+                android:layout_width="100dp"
+                android:id="@+id/fsg"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/ar"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text=" Minus"
+                android:layout_width="100dp"
+                android:id="@+id/xf"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/min"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:text=" Total"
+                android:layout_width="100dp"
+                android:id="@+id/hf"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="204dp"
+                android:id="@+id/tot"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09" />
+        </TableRow>
+
+
+
+</LinearLayout>
+</LinearLayout>

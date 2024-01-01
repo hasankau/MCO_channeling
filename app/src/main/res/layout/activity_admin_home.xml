@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.collection.Home1">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <Button
+                android:text="   Doctors"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/button11"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:onClick="doctors"
+                android:drawableLeft="@drawable/docic"
+                android:textDirection="ltr"
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="   New Doctor"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/button3"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:onClick="newdoctor"
+                android:drawableLeft="@drawable/ndocid"
+                android:textDirection="ltr"
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="  Create Event"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/button12"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+                android:shadowRadius="0"
+
+                android:drawableLeft="@drawable/neveic"
+                android:gravity="center_vertical"
+                android:layout_height="80dp"
+                android:onClick="event" />
+
+            <Button
+                android:text=" New Events"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/button4"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+                android:onClick="searchevents"
+                android:drawableLeft="@drawable/evemaybe"
+                android:shadowRadius="0"
+
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <Button
+                android:text=" Events"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/button14"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+                android:onClick="searchevents"
+                android:drawableLeft="@drawable/eveic"
+                android:shadowRadius="0"
+
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="  Users"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/button"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+
+                android:shadowRadius="0"
+
+                android:drawableLeft="@drawable/useic"
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="  Payments"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/pa"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+
+                android:shadowRadius="0"
+
+                android:drawableLeft="@drawable/payic"
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="  New Hospital"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/pa"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+
+                android:shadowRadius="0"
+
+                android:drawableLeft="@drawable/hosic"
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="  Hospitals"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="148dp"
+                android:id="@+id/arr"
+                android:background="@drawable/hbutton"
+                android:layout_weight=".5"
+                android:layout_margin="2dp"
+                android:textColor="#343434"
+
+                android:shadowRadius="0"
+
+                android:drawableLeft="@drawable/hosic"
+                android:gravity="center_vertical"
+                android:layout_height="80dp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

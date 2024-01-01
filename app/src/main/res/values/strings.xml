@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Good Doctor</string>
+    <string name="title_activity_register">RegisterActivity</string>
+</resources>
